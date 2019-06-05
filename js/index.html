@@ -20,6 +20,12 @@
     <p id="arithmetic__incriment"></p>
     <p id="arithmetic__exponentiation"></p>
     <p id="assignment"></p>
+    <p id="datatypes"></p>
+    <p id="datatypes__booleans"></p>
+    <p id="datatypes__person"></p>
+    <p id="datatypes__typeoff"></p>
+    <p id="datatypes__typeoff--object"></p>
+    <p id="datatypes__returns"></p>
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
      /*document.write(7+7);*/
@@ -64,10 +70,40 @@
     x /= 5;
     document.getElementById("assignment").innerHTML = x;
 
+    /*Data Types*/
+    var 
+    a = 123e-5;
+    document.getElementById("datatypes").innerHTML = a;
+
+    var
+    a = 3;
+    b = 3;
+    c = 6;
+    document.getElementById("datatypes__booleans").innerHTML = (a == b) + "<br>" + (b == c);
+
+    var person = {
+        firstName : "Andrii",
+        lastName : "Hrohodza",
+        age : 23
+    };
+    document.getElementById("datatypes__person").innerHTML = person.firstName + " " + person.lastName + " is " + person.age + " years old ";
+
+    document.getElementById("datatypes__typeoff").innerHTML = 
+    typeof 23  +
+    "<br>" +
+    typeof "hello" +
+    "<br>" +
+    typeof null;
+
+    var a = {
+        name: "Andrii",
+        lastName: "Hrohodza",
+        age: 23
+    };
+    document.getElementById("datatypes__typeoff--object").innerHTML = typeof a;
     
-
-
-
+    document.getElementById("datatypes__returns").innerHTML = 
+    typeof {a: "hello", age: 23};
     </script>
 
 
