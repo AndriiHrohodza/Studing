@@ -28,6 +28,7 @@
     <p id="datatypes__returns"></p>
     <p id="fuction__typeof"></p>
     <p id="function__calculator"></p>
+    <p id="object"></p>
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
      /*document.write(7+7);*/
@@ -120,7 +121,16 @@
     }
     document.getElementById("function__calculator").innerHTML = calculator(77);
 
-
+    /*Objects*/
+    var person = {
+      firstName: "John",
+      lastName : "Doe",
+      id       : 5566,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+    document.getElementById("object").innerHTML = person.fullName();
 
 
 
