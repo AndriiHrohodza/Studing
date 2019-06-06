@@ -38,6 +38,19 @@
     <p id="string__backslash--n"></p>
     <p id="string__objects"></p>
     <p id="string__compare"></p>
+    <p id="string-methods__lsn"></p>
+    <p id="string-methods__last"></p>
+    <p id="string-methods__search"></p>
+    <p id="string__slice"></p>
+    <p id="string-methods__substr"></p>
+    <button onclick="myFunction()">Click it</button>
+    <p id="string-methods__replace">Lorem ipsum dolor sit amet.</p>
+    <p id="string-methods__upperCase"></p>
+    <p id="string-methods__concat"></p>
+    <p id="string-methods__charA"></p>
+    <button onclick="myFunctionSplit()">Click</button>
+    <p id="string-methods__split"></p>
+
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
      /*document.write(7+7);*/
@@ -171,6 +184,53 @@
         carAge: 13
     };
     document.getElementById("string__compare").innerHTML = (p == z);
+
+    /*String Methods*/
+    /*var x = "Hello i`m happy to be here";
+    var lsn = x.indexOf("happy");
+    document.getElementById("string-methods__lsn").innerHTML = lsn;*/
+
+    var g = "Lorem ipsum dolor sit.";
+    var lsn = g.indexOf("dolor");
+    document.getElementById("string-methods__last").innerHTML = lsn;
+
+    var u = "Lorem ipsum dolor sit amet.";
+    var lsn__search = u.search("ipsum");
+    document.getElementById("string-methods__search").innerHTML = lsn__search; 
+
+    var h = "Lorem ipsum dolor sit amet, consectetur.";
+    var h__slice = h.slice(6, 11);
+    document.getElementById("string__slice").innerHTML = h__slice;
+
+    var j = "Lorem ipsum dolor sit amet, consectetur adipisicing.";
+    var j__substr = j.substr(12, 5);
+    document.getElementById("string-methods__substr").innerHTML = j__substr;
+
+    function myFunction() {
+        var k = document.getElementById("string-methods__replace").innerHTML;
+        var m = k.replace("Lorem", "HELLO");
+        document.getElementById("string-methods__replace").innerHTML = m;
+    }
+
+    var x = "Lorem ipsum dolor sit amet."
+    var y = x.toUpperCase();
+    document.getElementById("string-methods__upperCase").innerHTML = y;
+
+    var x = "hello";
+    var y = "world";
+    var z = x.concat(" ", y);
+    document.getElementById("string-methods__concat").innerHTML = z;
+
+    var a = "Lorem ipsum dolor sit amet.";
+    var b = a.charAt(1);
+    document.getElementById("string-methods__charA").innerHTML = b;
+
+    function myFunctionSplit() {
+       var q = "a,b,c,d";
+       var arr = q.split(",");
+       document.getElementById("string-methods__split").innerHTML = arr[1];
+   }
+
     </script>
 
 
