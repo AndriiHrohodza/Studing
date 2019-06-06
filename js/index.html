@@ -33,6 +33,11 @@
     <p id="event__data"></p>
     <div style="background-color: black; width: 100px; height: 100px;" 
     onmouseover="this.style.backgroundColor = 'red'"></div>
+    <p id="string__lenght"></p>
+    <p id="string__backslash"></p>
+    <p id="string__backslash--n"></p>
+    <p id="string__objects"></p>
+    <p id="string__compare"></p>
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
      /*document.write(7+7);*/
@@ -140,10 +145,32 @@
     function displayDate() {
         document.getElementById("event__data").innerHTML = Date();
     }
+    /*Strings*/
+    var txt = "dsadasdasdas asdaeq";
+    document.getElementById("string__lenght").innerHTML = txt.length;
 
+    var x = "THis is \'NOTE\' my foul";
+    document.getElementById("string__backslash").innerHTML = x;
 
+    var u = "This is \
+    new era";
+    document.getElementById("string__backslash--n").innerHTML = u;
 
+    var x = "Hello";
+    var y = new String("Hello");
+    document.getElementById("string__objects").innerHTML = 
+    typeof x + "<br>" +
+    typeof y;
 
+    var p = {
+        carName: "Fiat",
+        carAge: 23
+    };
+    var z = {
+        carName: "Nissan",
+        carAge: 13
+    };
+    document.getElementById("string__compare").innerHTML = (p == z);
     </script>
 
 
