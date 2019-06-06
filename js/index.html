@@ -53,6 +53,13 @@
     <p id="nubmer"></p>
     <p id="nuber__nan"></p>
     <p id="number__nan--typeof"></p>
+    <p id="numbers-method"></p>
+    <p id="numbers-method--exponential"></p>
+    <p id="numbers-method--fixed"></p>
+    <p id="numbers-method--precision"></p>
+    <p id="numbers-method--number"></p>
+    <p id="numbers-method--parseInt"></p>
+    <p id="numbers-method--parseFloat"></p>
 
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
@@ -248,6 +255,34 @@
    var x = NaN;
    document.getElementById("number__nan--typeof").innerHTML = 
    typeof x;
+
+   /*Number Methods*/
+   var x = 23;
+   var y = x.toString();
+   document.getElementById("numbers-method").innerHTML = y + "<br>" +
+   typeof y;
+
+   var x = 2;
+   document.getElementById("numbers-method--exponential").innerHTML = x.toExponential(4);
+
+   var y = 9.556;
+   document.getElementById("numbers-method--fixed").innerHTML = y.toFixed(2);
+
+   var z = 9.556;
+   document.getElementById("numbers-method--precision").innerHTML = z.toPrecision(2);
+
+   document.getElementById("numbers-method--number").innerHTML = 
+   Number(true) + "<br>" +
+   Number(false) + "<br>" +
+   Number(10,33);
+
+   var x = "33.66 6"; 
+   document.getElementById("numbers-method--parseInt").innerHTML = 
+   parseInt(x);
+
+   var x = "66.33 6"; 
+   document.getElementById("numbers-method--parseFloat").innerHTML = 
+   parseFloat(x);
 
     </script>
 
