@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/stylejs.css">
     <title>JS</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-      
+
   </head>
   <body>
     <div id="text"></div>
@@ -29,6 +29,10 @@
     <p id="fuction__typeof"></p>
     <p id="function__calculator"></p>
     <p id="object"></p>
+    <button onclick="displayDate()">Click me!</button>
+    <p id="event__data"></p>
+    <div style="background-color: black; width: 100px; height: 100px;" 
+    onmouseover="this.style.backgroundColor = 'red'"></div>
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
      /*document.write(7+7);*/
@@ -131,6 +135,12 @@
       }
     };
     document.getElementById("object").innerHTML = person.fullName();
+
+    /*Events*/
+    function displayDate() {
+        document.getElementById("event__data").innerHTML = Date();
+    }
+
 
 
 
