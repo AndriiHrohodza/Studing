@@ -50,6 +50,9 @@
     <p id="string-methods__charA"></p>
     <button onclick="myFunctionSplit()">Click</button>
     <p id="string-methods__split"></p>
+    <p id="nubmer"></p>
+    <p id="nuber__nan"></p>
+    <p id="number__nan--typeof"></p>
 
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
@@ -230,6 +233,21 @@
        var arr = q.split(",");
        document.getElementById("string-methods__split").innerHTML = arr[1];
    }
+
+   /*Numbers*/
+   var x = "10";
+   var y = "100";
+   var z = y * x;
+   document.getElementById("nubmer").innerHTML = z;
+
+   var x = 10;
+   var y = "Hello";
+   z = 10 * (x * y);
+   document.getElementById("nuber__nan").innerHTML = isNaN(z);
+
+   var x = NaN;
+   document.getElementById("number__nan--typeof").innerHTML = 
+   typeof x;
 
     </script>
 
