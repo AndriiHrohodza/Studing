@@ -1,2 +1,2 @@
 # Studing
-This repository for my study`s projects
+This repository of my study`s projects
