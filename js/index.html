@@ -60,6 +60,13 @@
     <p id="numbers-method--number"></p>
     <p id="numbers-method--parseInt"></p>
     <p id="numbers-method--parseFloat"></p>
+    <p id="array"></p>
+    <p id="array_change"></p>
+    <p id="array_lenght"></p>
+    <p id="array_lastElement"></p>
+    <button onclick="carsFunction"></button>
+    <p id="array_push"></p>
+    
 
     <script>
      document.getElementById("text").innerHTML = 5 + 6; 
@@ -283,6 +290,30 @@
    var x = "66.33 6"; 
    document.getElementById("numbers-method--parseFloat").innerHTML = 
    parseFloat(x);
+
+   /*Arrays*/
+   var cars = ["Volvo", "Nissan", "Opel"];
+   document.getElementById("array").innerHTML = cars[0];
+
+   var cars = ["Volvo", "Nissan", "Opel"];
+   cars[0] = "audi"; //change first item "Volvo" to "audi"
+   document.getElementById("array_change").innerHTML = cars;
+
+   var cars = ["Volvo", "Nissan", "Opel"];
+   document.getElementById("array_lenght").innerHTML = cars.length;
+
+   var cars = ["Volvo", "Nissan", "Opel"];
+   document.getElementById("array_lastElement").innerHTML = cars[cars.length - 1]; // acces to the last one element
+
+   var cars = ["Volvo", "Nissan", "Opel"];
+   document.getElementById("array_push").innerHTML = cars;
+   function carsFunction() {
+    cars.push("Nexia"); //push method, add one more element
+    document.getElementById("array_push").innerHTML = cars;
+   }
+
+
+
 
     </script>
 
