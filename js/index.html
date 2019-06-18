@@ -66,6 +66,18 @@
     <p id="array_lastElement"></p>
     <button onclick="carsFunction"></button>
     <p id="array_push"></p>
+    <p id="arrayMethod"></p>
+    <p id="arrayMethod__pop"></p>
+    <p id="arrayMethod__pop-full"></p>
+    <p id="arrayMethod__push"></p>
+    <p id="arrayMethod__push-full"></p>
+    <p id="arrayMethod__unshift"></p>
+    <p id="arrayMethod__unshift-full"></p>
+    <button onclick="arrayMethodSplice">Slice IT!</button>
+    <p id="arrayMethod__splice"></p>
+    <p id="arrayMethod__splice-new"></p>
+		<p id="arrayMethod__concate"></p>
+
     
 
     <script>
@@ -312,8 +324,31 @@
     document.getElementById("array_push").innerHTML = cars;
    }
 
+   /*Arrays Method*/
+   var x = ['apple', 'banana', 'orange'];
+   document.getElementById("arrayMethod").innerHTML = x.toString(); // join() the same method but can add the separator(*).  Banana * Orange * Apple * Mango
 
+   var x = ['apple', 'banana', 'orange'];
+   document.getElementById("arrayMethod__pop").innerHTML = x.pop();
+   document.getElementById("arrayMethod__pop-full").innerHTML = x;
 
+   var x = ['apple', 'banana', 'orange'];
+   document.getElementById("arrayMethod__push").innerHTML = x.push('kiwi');// shift() the same method but "shifts" all elements to lower index.   document.getElementById("arrayMethod__push-full").innerHTML = x;
+
+   var y = ['apple', 'banana', 'orange'];
+   document.getElementById('arrayMethod__unshift').innerHTML = y.unshift('coca');
+   document.getElementById('arrayMethod__unshift-full').innerHTML = y;
+
+   var z = ['apple', 'banana', 'orange'];
+   document.getElementById("arrayMethod__splice").innerHTML = "Old array:" + "<br>" + z;
+   function arrayMethodSplice() { 
+   	z.splice(1, 0, "coca", "ananas"); // add coca and ananas after apple
+   	document.getElementById("arrayMethod__splice-new").innerHTML = "New array" + "<br>" + z;
+   }
+
+   var x = ['apple', 'banana', 'orange'];
+   var y = ["coca", "ananas"];
+   document.getElementById('arrayMethod__concate').innerHTML = x.concat(y);
 
     </script>
 
