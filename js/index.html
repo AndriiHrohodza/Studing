@@ -77,6 +77,8 @@
     <p id="arrayMethod__splice"></p>
     <p id="arrayMethod__splice-new"></p>
 		<p id="arrayMethod__concate"></p>
+		<p id="arraySort"></p>
+		<p id="arraySort__numbers"></p>
 
     
 
@@ -349,6 +351,14 @@
    var x = ['apple', 'banana', 'orange'];
    var y = ["coca", "ananas"];
    document.getElementById('arrayMethod__concate').innerHTML = x.concat(y);
+
+   /*Array Sort*/
+   var x = ['apple', 'orange', 'banana'];
+   document.getElementById("arraySort").innerHTML = x.sort(); //sort Strings
+
+   var x = [1, 2, 3, 5, 8, 900, 5];
+   document.getElementById('arraySort__numbers').innerHTML = x.sort(function(a, b){return a - b}); //sort Numbers. Descending b - a
+
 
     </script>
 
