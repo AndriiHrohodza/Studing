@@ -15,4 +15,7 @@ newArr[3] = "Toyota";//(5)
 console.log(newArr.length);//(6)
 console.log(newArr);//(7)
 
-
+/*Split*/
+var x = "Hello.im.Andrew";
+var arr = x.split(".");
+console.log(arr);
