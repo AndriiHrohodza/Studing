@@ -75,3 +75,8 @@ console.log(y);
 var z = ["Banana", "Orange", "Apple", "Mango", "Banana", "Apple"];
 var f = z.lastIndexOf("Orange", 3);
 console.log(f);
+
+/*Task 3*/
+var arr = [1, 9, 6, -12, -4, 5];
+var sortArr = arr.sort(function(a, b){return b - a});//(1)
+console.log(sortArr);
