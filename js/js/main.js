@@ -19,3 +19,44 @@ console.log(newArr);//(7)
 var x = "Hello.im.Andrew";
 var arr = x.split(".");
 console.log(arr);
+
+/*Join*/
+var x = ["one", "two", "three"];
+var y = x.join(",");
+console.log(y);
+
+/*Splice*/
+var z = ["one", "two", "three"];
+z.splice(0, 1);
+console.log(z);
+
+var x = ["one", "two", "three"];
+x.splice(0, 2, "Hello", "World");
+console.log(x);
+
+var y = ["one", "two", "three"];
+y.splice(0, 0, "Hello", "World");
+console.log(y);
+
+var z = [1, 2, 3, 7, 8];
+z.splice(-2, 0, 4, 5, 6);
+console.log(z);
+
+/*Slice*/
+var arr = [5, 4, 3, 2, 1];
+console.log('Old array ' + arr);
+var arr2 = arr.slice(1, 3);
+console.log("New array with slice " + arr2);
+
+var arr = [5, 4, 3, 2, 1];
+arr.sort();
+console.log(arr);
+
+/*Sort*/
+var g = [2, 6, 4, 99, 103,14];
+var h = g.sort(function(a, b) {return a - b});
+console.log(h);
+
+var g = [2, 6, 4, 99, 103,14];
+var h = g.sort(function(a, b) {return b - a});
+console.log(h);
