@@ -60,3 +60,18 @@ console.log(h);
 var g = [2, 6, 4, 99, 103,14];
 var h = g.sort(function(a, b) {return b - a});
 console.log(h);
+
+/*Reverse*/
+var x = [1, 2, 5, 7];
+var y = x.reverse();
+console.log("Old array " + x + '\n' + "New array reversed " + y);
+
+/*indexOf*/
+var x = ["Banana", "Orange", "Apple", "Mango", "Banana", "Orange", "Apple"];
+var y = x.indexOf("Apple", 2);
+console.log(y);
+
+/*lastIndexOf*/
+var z = ["Banana", "Orange", "Apple", "Mango", "Banana", "Apple"];
+var f = z.lastIndexOf("Orange", 3);
+console.log(f);
