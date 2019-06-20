@@ -85,3 +85,10 @@ console.log(sortArr);
 var arr = ["HTML", "JavaScript", "CSS"];
 var arrSorted = arr.sort();//sorted by Alphabet
 console.log(arrSorted);
+
+/*Task 5*/
+var arr = ["я", "не", "слухаю", "Олега", "Винника"];
+arr.splice(1, 1);//(1)
+console.log(arr);//(2)
+arr.splice(0, 2, "пацани", "слухали");//(3)
+console.log(arr);//(4)
