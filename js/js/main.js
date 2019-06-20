@@ -78,5 +78,10 @@ console.log(f);
 
 /*Task 3*/
 var arr = [1, 9, 6, -12, -4, 5];
-var sortArr = arr.sort(function(a, b){return b - a});//(1)
+var sortArr = arr.sort(function(a, b){return b - a});
 console.log(sortArr);
+
+/*Task 4*/
+var arr = ["HTML", "JavaScript", "CSS"];
+var arrSorted = arr.sort();//sorted by Alphabet
+console.log(arrSorted);
