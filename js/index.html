@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="css/stylejs.css">
     <title>JS</title>
 
@@ -31,7 +31,7 @@
     <p id="object"></p>
     <button onclick="displayDate()">Click me!</button>
     <p id="event__data"></p>
-    <div style="background-color: black; width: 100px; height: 100px;" 
+    <div style="background-color: black; width: 100px; height: 100px;"
     onmouseover="this.style.backgroundColor = 'red'"></div>
     <p id="string__lenght"></p>
     <p id="string__backslash"></p>
@@ -80,10 +80,10 @@
 		<p id="arraySort"></p>
 		<p id="arraySort__numbers"></p>
 
-    
+
 
     <script>
-     document.getElementById("text").innerHTML = 5 + 6; 
+     document.getElementById("text").innerHTML = 5 + 6;
      /*document.write(7+7);*/
      /*
      window.alert(18*19);
@@ -104,19 +104,19 @@
      /*alert(z);*/
 
      /*Arithmetic*/
-     var 
+     var
      a = 23;
      b = 24;
      c = a * b + (b - a);
      document.getElementById("arithmetic").innerHTML = c;
 
-     var 
+     var
      a = 5;
      a++;
      z = a;
      document.getElementById("arithmetic__incriment").innerHTML = z;
 
-     var 
+     var
      a = 23;
      document.getElementById("arithmetic__exponentiation").innerHTML = a ** 2;
 
@@ -127,7 +127,7 @@
     document.getElementById("assignment").innerHTML = x;
 
     /*Data Types*/
-    var 
+    var
     a = 123e-5;
     document.getElementById("datatypes").innerHTML = a;
 
@@ -144,7 +144,7 @@
     };
     document.getElementById("datatypes__person").innerHTML = person.firstName + " " + person.lastName + " is " + person.age + " years old ";
 
-    document.getElementById("datatypes__typeoff").innerHTML = 
+    document.getElementById("datatypes__typeoff").innerHTML =
     typeof 23  +
     "<br>" +
     typeof "hello" +
@@ -157,8 +157,8 @@
         age: 23
     };
     document.getElementById("datatypes__typeoff--object").innerHTML = typeof a;
-    
-    document.getElementById("datatypes__returns").innerHTML = 
+
+    document.getElementById("datatypes__returns").innerHTML =
     typeof {a: "hello", age: 23};
 
     /*Function*/
@@ -202,7 +202,7 @@
 
     var x = "Hello";
     var y = new String("Hello");
-    document.getElementById("string__objects").innerHTML = 
+    document.getElementById("string__objects").innerHTML =
     typeof x + "<br>" +
     typeof y;
 
@@ -227,7 +227,7 @@
 
     var u = "Lorem ipsum dolor sit amet.";
     var lsn__search = u.search("ipsum");
-    document.getElementById("string-methods__search").innerHTML = lsn__search; 
+    document.getElementById("string-methods__search").innerHTML = lsn__search;
 
     var h = "Lorem ipsum dolor sit amet, consectetur.";
     var h__slice = h.slice(6, 11);
@@ -274,7 +274,7 @@
    document.getElementById("nuber__nan").innerHTML = isNaN(z);
 
    var x = NaN;
-   document.getElementById("number__nan--typeof").innerHTML = 
+   document.getElementById("number__nan--typeof").innerHTML =
    typeof x;
 
    /*Number Methods*/
@@ -292,17 +292,17 @@
    var z = 9.556;
    document.getElementById("numbers-method--precision").innerHTML = z.toPrecision(2);
 
-   document.getElementById("numbers-method--number").innerHTML = 
+   document.getElementById("numbers-method--number").innerHTML =
    Number(true) + "<br>" +
    Number(false) + "<br>" +
    Number(10,33);
 
-   var x = "33.66 6"; 
-   document.getElementById("numbers-method--parseInt").innerHTML = 
+   var x = "33.66 6";
+   document.getElementById("numbers-method--parseInt").innerHTML =
    parseInt(x);
 
-   var x = "66.33 6"; 
-   document.getElementById("numbers-method--parseFloat").innerHTML = 
+   var x = "66.33 6";
+   document.getElementById("numbers-method--parseFloat").innerHTML =
    parseFloat(x);
 
    /*Arrays*/
@@ -343,7 +343,7 @@
 
    var z = ['apple', 'banana', 'orange'];
    document.getElementById("arrayMethod__splice").innerHTML = "Old array:" + "<br>" + z;
-   function arrayMethodSplice() { 
+   function arrayMethodSplice() {
    	z.splice(1, 0, "coca", "ananas"); // add coca and ananas after apple
    	document.getElementById("arrayMethod__splice-new").innerHTML = "New array" + "<br>" + z;
    }
@@ -361,6 +361,15 @@
 
 
     </script>
+
+    <div class="red">
+      do some changes
+      <table>
+        <tr>
+          sdfsdfsfsdfsfsfsfsdfsdfds
+        </tr>
+      </table>
+    </div>
 
 
 
